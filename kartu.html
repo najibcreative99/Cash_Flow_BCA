@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu BCA Blue Passport</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e0e0e0; /* Background light gray */
+            font-family: 'Roboto', sans-serif; /* Ganti font menjadi Roboto */
+            margin: 0;
+        }
+
+        .card {
+            width: 350px;
+            height: 220px;
+            background: linear-gradient(180deg, #007bff 0%, #005BAC 100%);
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            color: #fff;
+            position: relative;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+            border: 2px solid rgba(255, 255, 255, 0.5); /* Border transparan */
+        }
+
+        .card-logo {
+            position: absolute;
+            top: 10px; /* Pindah sedikit lebih ke atas */
+            right: 15px; /* Pindah sedikit lebih ke kanan */
+        }
+
+        .logo {
+            width: 100px; /* Memperbesar ukuran logo untuk visibilitas */
+            height: auto;
+            opacity: 0.95; /* Mengurangi opacity untuk memberikan efek transparan */
+        }
+
+        .card-title {
+            font-size: 26px; /* Ukuran font judul diperbesar */
+            font-weight: bold;
+            margin: 15px 0;
+            text-align: left;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Shadow lebih gelap untuk kontras lebih baik */
+        }
+
+        .student-info, .student-class {
+            font-size: 16px; /* Ukuran font informasi siswa sedikit diperbesar */
+            text-align: left;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* Shadow lebih gelap */
+        }
+
+        .card-number {
+            font-size: 24px; /* Ukuran nomor kartu diperbesar untuk keterbacaan */
+            font-weight: bold;
+            text-align: left;
+            margin-top: 10px;
+            letter-spacing: 3px; /* Spacing between digits */
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* Shadow untuk nomor kartu */
+        }
+
+        .wifi-icon {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 24px; /* Ukuran ikon wifi diperbesar */
+            color: #ffffff;
+            opacity: 1; /* Tingkatkan visibilitas */
+        }
+
+        .chip-icon {
+            position: absolute;
+            bottom: 15px; /* Memindahkan sedikit ke bawah */
+            left: 20px;
+            font-size: 24px; /* Ukuran ikon chip diperbesar */
+            color: #f1c40f; /* Warna emas */
+            opacity: 1; /* Tingkatkan visibilitas */
+        }
+
+        /* Futuristic design elements */
+        .card::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            z-index: -1;
+            backdrop-filter: blur(20px); /* Increased blur for a better effect */
+        }
+
+        .card::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+            transform: translate(-50%, -50%);
+            opacity: 0.6; /* Slightly more opacity for a stronger effect */
+            z-index: -1;
+        }
+
+        /* Additional styles for card elements */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="wifi-icon"><i class="fas fa-wifi"></i></div>
+        <div class="card-logo">
+            <img src="img/bca.png" alt="Logo BCA" class="logo">
+        </div>
+        <div class="card-title">Paspor Blue Debit</div>
+        <div class="student-info">BCA Cash Management SMK Krian 1 Sidoarjo</div>
+        <div class="student-class">XII RPL 3 Student</div>
+        <div class="card-number">1234 5678 9012 3456</div>
+        <div class="chip-icon"><i class="fas fa-credit-card"></i></div>
+    </div>
+</body>
+</html>
